@@ -2,7 +2,6 @@
 #include <igl/opengl/glfw/Viewer.h>
 #include <igl/opengl/glfw/imgui/ImGuiMenu.h>
 #include <sstream>
-#include <igl/opengl/glfw/Viewer.h>
 
 
 Eigen::MatrixXd V;
@@ -173,7 +172,7 @@ void draw_bbox()
 int main(int argc, char *argv[])
 {
 
-  // Load a mesh in OFF format
+  // Load a mesh in OFF/OBJ format
   if (argc <2 )
   {
     std::cout << "Need to provide mesh filename as first argument."<< std::endl;
