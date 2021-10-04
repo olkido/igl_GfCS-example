@@ -8,7 +8,7 @@ Clone the example into a directory
 
     git clone https://github.com/olkido/igl_GfCS-example.git
 
-In the following, we will assume that the example directory is `PATH_TO_EXAMPLE` (i.e. the main .cpp file can be found under `PATH_TO_EXAMPLE/main.cpp`) )
+In the following, we will assume that the example directory is `PATH_TO_EXAMPLE` (i.e. the main .cpp file can be found under `PATH_TO_EXAMPLE/main.cpp`)
 
 
 ## Download igl_GfCS
