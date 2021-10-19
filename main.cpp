@@ -11,6 +11,7 @@ igl::opengl::glfw::Viewer viewer;
 // The (optional) viewer menu
 igl::opengl::glfw::imgui::ImGuiMenu menu;
 
+
 // These are to showcase the menu box (imgui) capacity. See below.
 double doubleVariable = 0.1f; // Shared between two menus
 bool boolVariable = true;
@@ -171,7 +172,8 @@ void draw_bbox()
 
 int main(int argc, char *argv[])
 {
-
+  // Make sure this function does not automatically exit (eg. by adding a return;) by  before viewer.launch() is called (see below). Otherwise code might not build (some odd imgui issue).
+  
   // Load a mesh in OFF/OBJ format
   if (argc <2 )
   {
@@ -199,7 +201,10 @@ int main(int argc, char *argv[])
   viewer.data().line_color<<173./255,174./255,103./255,1.;
 
   // Launch the viewer
+  // Do not comment this line out, do not add a return before it. Otherwise code might not build (some odd imgui issue).
+  
   viewer.launch();
+  
   
 }
 
